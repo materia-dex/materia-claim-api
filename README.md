@@ -15,3 +15,5 @@ Launch the server:
 ```
 ## Swagger
 You can test APIs using Swagger UI configured on [localhost:80](http://localhost:80 "localhost:80").
+## Vercel
+The simplified version of this API is deployed on Vercel at [materia-claim-api.vercel.app](https://materia-claim-api.vercel.app "materia-claim-api.vercel.app")
