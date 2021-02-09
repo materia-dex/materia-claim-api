@@ -1,5 +1,6 @@
 // Express
 const express = require("express");
+const cors = require('cors');
 const app = express();
 const port = 80;
 
@@ -9,6 +10,9 @@ const api = require("./api");
 // Swagger
 const swaggerUI = require("swagger-ui-express");
 const swaggerSpecifications = require("./swagger/swagger.json");
+
+// CORS
+app.use(cors());
 
 // Load APIs
 api.boot(app);
