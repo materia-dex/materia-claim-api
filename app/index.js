@@ -1,6 +1,9 @@
 const express = require("express");
+const cors = require('cors');
 const app = express();
-const port = 80
+const port = 80;
+
+app.use(cors());
 
 app.get("/api/system/ping", (request, response, next) => {
     response.status(200).send({
